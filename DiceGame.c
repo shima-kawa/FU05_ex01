@@ -5,9 +5,14 @@
 int main(){
   int i, sum=0;
   int result[2];
+  char name[20];
 
   /* init randam function by time */
   srand((unsigned int)time(NULL));
+
+  printf("What is your name?\n> ");
+  scanf("%s", name);
+  printf("Hello, %s!\n", name);
   
   printf("Rolling dice...\n");
   for(i=0;i<2;i++){
